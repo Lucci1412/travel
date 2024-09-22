@@ -1,28 +1,22 @@
-'use client'
-import React from 'react';
-import { Layout, Menu  } from 'antd/lib';
-import Link from 'next/link';
+import React from 'react'
+import { Avatar, AvatarImage, AvatarFallback } from '../../ui/avatar'
 
 const Header = () => {
-  const { Header } = Layout;
   return (
-    <Header className="header">
-      <div className="logo" />
-      <Menu
-        defaultSelectedKeys={['2']}
-        mode="horizontal"
-        style={{ lineHeight: '64px' }}
-        theme="dark"
-      >
-        <Menu.Item key="1"><Link href="/"></Link></Menu.Item>
-        <Menu.Item key="2"><Link href="/home">Home</Link></Menu.Item>
-        <Menu.Item key="3"><Link href="/toplist">Top List</Link></Menu.Item>
-        <Menu.Item key="4"><Link href="/review">Review</Link></Menu.Item>
-        <Menu.Item key="5"><Link href="/login">Login</Link></Menu.Item>
-      </Menu>
-    </Header>
-
-  );
+    <div className="h-[120px] bg-slate-200 w-full  ">
+      <div className="container mx-auto px-4 flex flex-row items-center  ">
+        <div>Logo</div>
+        <div className="flex-1"></div>
+        <div className="flex flex-row">
+          <span>Admin</span>
+          <Avatar>
+            <AvatarImage src="https://github.com/shadcn.png" />
+            <AvatarFallback>CN</AvatarFallback>
+          </Avatar>
+        </div>
+      </div>
+    </div>
+  )
 }
 
-export default Header;
+export default Header

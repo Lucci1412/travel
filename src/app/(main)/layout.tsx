@@ -1,7 +1,7 @@
-import Header from '@/components/common/Wrapper/Header'
-import Footer from '@/components/common/Wrapper/Footer'
 import { Suspense } from 'react'
 import Loading from './loading'
+import Header from '@/components/common/wrapper/Header'
+import Footer from '@/components/common/wrapper/Footer'
 
 export default function MainLayout({
   children,
@@ -11,7 +11,9 @@ export default function MainLayout({
   return (
     <div className="flex flex-col h-screen">
       <Header></Header>
-      <Suspense fallback={<Loading />}>{children}</Suspense>
+      <Suspense fallback={<Loading />}>
+        <div className="container mx-auto px-4">{children}</div>
+      </Suspense>
       <Footer></Footer>
     </div>
   )

@@ -1,6 +1,5 @@
-import Sidebar from '@/components/common/Wrapper/Sidebar';
-import TopBar from '@/components/common/Wrapper/Topbar';
-
+import Sidebar from '@/components/common/wrapper/Sidebar';
+import TopBar from '@/components/common/wrapper/Topbar';
 export default function RootLayout({
   children,
 }: Readonly<{

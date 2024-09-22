@@ -2,7 +2,7 @@ import React from 'react';
 
 const ReviewPage = () => {
   return (
-    <div>
+    <div className='bg-red-300'>
       ReviewPage
     </div>
   );

@@ -1,9 +1,16 @@
-import HomePage from './(main)/home/page'
+import React from 'react'
+import HomePage from '@/components/HomePage'
+import Header from '@/components/common/wrapper/Header'
+import Footer from '@/components/common/wrapper/Footer'
 
-const Homepage = () => {
+const Home = () => {
   return (
-    <HomePage></HomePage>
+    <div className="flex flex-col">
+      <Header></Header>
+      <HomePage />
+      <Footer></Footer>
+    </div>
   )
 }
 
-export default Homepage
+export default Home
