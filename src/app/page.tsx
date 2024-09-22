@@ -1,6 +1,8 @@
+import HomePage from './(main)/home/page'
+
 const Homepage = () => {
   return (
-    <div className=''>Homepage</div>
+    <HomePage></HomePage>
   )
 }
 

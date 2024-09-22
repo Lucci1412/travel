@@ -1,0 +1,23 @@
+#!/usr/bin/env sh
+echo '🏗️👷 testing and buidling before commit'
+
+# chek types
+npm run check-types  ||
+(
+    echo '😤🏀👋😤 Lỗi types rồi kìa ba ơi! 💩💩💩💩💩💩💩💩💩💩😤🏀👋😤'
+    false;
+)
+# chek format
+npm run check-format  ||
+(
+    echo '😤🏀👋😤 Lỗi format rồi kìa ba ơi! 💩💩💩💩💩💩💩💩💩💩😤🏀👋😤'
+    false;
+)
+# chek lint
+npm run lint ||
+(
+    echo '😤🏀👋😤 Lỗi lint rồi kìa ba ơi! 💩💩💩💩💩💩💩💩💩💩😤🏀👋😤'
+    false;
+)
+
+echo '✅✅✅✅ Ok ngon rồi đó. Push code lên đi ✅✅✅✅'
