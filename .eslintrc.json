@@ -80,14 +80,14 @@
     "no-lonely-if": "error",
     "no-unneeded-ternary": "error",
     "one-var-declaration-per-line": "error",
-    "quotes": [
-      "error",
-      "single",
-      {
-        "allowTemplateLiterals": false,
-        "avoidEscape": true
-      }
-    ],
+    // "quotes": [
+    //   "error",
+    //   "single",
+    //   {
+    //     "allowTemplateLiterals": false,
+    //     "avoidEscape": true
+    //   }
+    // ],
     // ES6
     "array-callback-return": "off",
     "@typescript-eslint/ban-ts-comment": "off",
@@ -102,6 +102,7 @@
       }
     ],
     "no-unused-expressions": "off",
+    "@typescript-eslint/no-unused-expressions": "off",
     "no-prototype-builtins": "off",
     // REACT
     "react/jsx-uses-react": "off",

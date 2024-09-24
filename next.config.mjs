@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // async redirects() {
-   
-  // },
+  images: {
+    domains: ['2trip.vn'],
+  },
 };
 
 export default nextConfig;
